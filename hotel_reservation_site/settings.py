@@ -11,8 +11,8 @@ import cloudinary.api
 from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(file)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(file)))
 
 #######  for react to run on port 800 ############
 
@@ -201,7 +201,7 @@ os.makedirs(STATIC_ROOT, exist_ok=True)
 
 STATICFILES_DIRS = [
 os.path.join(BASE_DIR, 'static'),
-os.path.join(BASE_DIR, 'build/static'),
+os.path.join(BASE_DIR, 'build/static')
     
 ]
 
