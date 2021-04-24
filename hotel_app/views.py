@@ -9,10 +9,6 @@ from rest_framework import status
 
 
 
-class IndexView():
-    def get(self, request):
-        index = open(str(settings.BASE_DIR.path('build/index.html')), 'r')
-        return HttpResponse(content=index.read())
 
 
 class RoomView(ListAPIView):
