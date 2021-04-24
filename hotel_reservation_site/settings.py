@@ -214,7 +214,7 @@ MEDIA_ROOT = 'static/images'
 
 
 # MEDIA_ROOT = BASE_DIR / 'static/images'
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
+ #STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # STATIC_ROOT='staticfiles'
 
