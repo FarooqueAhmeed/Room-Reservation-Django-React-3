@@ -11,7 +11,8 @@ import cloudinary.api
 from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(file)))
 
 #######  for react to run on port 800 ############
 
@@ -191,33 +192,47 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 
 
-# STATIC_URL = '/static/'
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
-
-
-
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_TMP = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-MEDIA_URL = '/images/'
 
-MEDIA_ROOT = 'static/images'
-#######  for react to run on port 800 ############
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-    BASE_DIR / 'build/static'
+os.makedirs(STATIC_TMP, exist_ok=True)
+os.makedirs(STATIC_ROOT, exist_ok=True)
+
+STATICFILES_DIRS = (
+os.path.join(BASE_DIR, 'static'),
+os.path.join(BASE_DIR, 'build/static'),
+    
+)
+
+
+
+
+
+
+
+
+#####################################################
+
+# STATIC_URL = '/static/'
+# MEDIA_URL = '/images/'
+
+# MEDIA_ROOT = 'static/images'
+# #######  for react to run on port 800 ############
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static',
+#     BASE_DIR / 'build/static'
 ]
+
+########################################################
+
+
+
+
+
 #######  for react to run on port 800 ############
 #STATIC_ROOT='staticfiles'
 
-
-
-# MEDIA_ROOT = BASE_DIR / 'static/images'
- #STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 
