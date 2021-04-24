@@ -212,7 +212,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'build/static'
 ]
 #######  for react to run on port 800 ############
-STATIC_ROOT='staticfiles'
+#STATIC_ROOT='staticfiles'
 
 
 
