@@ -50,7 +50,7 @@ class Booking(models.Model):
     booking_date = models.DateTimeField(auto_now_add=True)
     checking_date = models.DateTimeField(blank=True, null=True)
     checkout_date = models.DateTimeField(null=True, blank=True)
-    phone_number = models.CharField(max_length=14, null=True)
+    # phone_number = models.CharField(max_length=14, null=True)
     email = models.EmailField()
     
     def __str__(self):
@@ -67,7 +67,7 @@ class Payment(models.Model):
 class CheckIn(models.Model):
     customer = models.ForeignKey(User, on_delete=models.CASCADE)
     room = models.ForeignKey('Room', on_delete=models.CASCADE)
-    phone_number = models.CharField(max_length=14, null=True)
+    # phone_number = models.CharField(max_length=14, null=True)
     email = models.EmailField(null=True)
 
     def __str__(self):

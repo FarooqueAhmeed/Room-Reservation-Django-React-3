@@ -27,4 +27,4 @@ class CheckinSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CheckIn
-        fields = ('phone_number', 'email', 'customer_id', 'customer_name', 'room_id', 'room_slug',)
+        fields = ( 'email', 'customer_id', 'customer_name', 'room_id', 'room_slug',)

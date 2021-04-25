@@ -46,7 +46,7 @@ class BookingCreateApiView(CreateAPIView):
         checked_in_room = CheckIn.objects.create(
             customer=request.user,
             room=room,
-            phone_number=request.data['phone_number'],
+            #phone_number=request.data['phone_number'],
             email=request.data['email']
         )
         checked_in_room.save()
