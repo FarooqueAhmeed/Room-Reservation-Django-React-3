@@ -40,7 +40,7 @@ export default function BookingComponent({ room }) {
     let isFormValid = isValid();
     let bookingDate = {
       email: data.email,
-      phone_number: data.phone_number,
+      // phone_number: data.phone_number,
       checking_date: data.checking_date,
       checkout_date: data.checkout_date,
       room: room.id,
@@ -122,11 +122,11 @@ export default function BookingComponent({ room }) {
         />
       </div> */}
 
-      <div className="row" id="phoneID" style={{ display: "none" }}>
+      {/* <div className="row" id="phoneID" style={{ display: "none" }}>
         <div className="form-group col-md-6 m-auto text-danger">
           <p id="phone"></p>
         </div>
-      </div>
+      </div> */}
 
       <div className="row">
         <TextInput
