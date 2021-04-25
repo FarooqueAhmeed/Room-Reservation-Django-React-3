@@ -11,7 +11,7 @@ export default function BookingComponent({ room }) {
   const user_id = parseInt(context.user_id);
   const [data, setData] = useState({
     email: "",
-    phone_number: "",
+    // phone_number: "",
     checking_date: "",
     checkout_date: "",
   });
@@ -59,7 +59,7 @@ export default function BookingComponent({ room }) {
           setData(
             {
               email: "",
-              phone_number: "",
+              // phone_number: "",
               checking_date: "",
               checkout_date: "",
             },
