@@ -17,7 +17,7 @@ export default function BookingComponent({ room }) {
   });
 
   const isValid = () => {
-    const phone = "";
+    const phone = /^\+?(88)?01[0-9]{9}/;
     if (!phone.test(data.phone_number)) {
       document.getElementById("phoneID").style.display = "block";
       document.getElementById("phone").innerHTML = "Invalid Phone Number";
@@ -104,7 +104,7 @@ export default function BookingComponent({ room }) {
           required={true}
         />
       </div>
-{/* 
+
       <div className="row">
         <TextInput
           divClass="form-group col-md-6 m-auto"
@@ -118,15 +118,15 @@ export default function BookingComponent({ room }) {
           onChange={(event) =>
             setData({ ...data, phone_number: event.target.value })
           }
-          required={Flase}
+          required={false}
         />
-      </div> */}
+      </div>
 
-      {/* <div className="row" id="phoneID" style={{ display: "none" }}>
+      <div className="row" id="phoneID" style={{ display: "none" }}>
         <div className="form-group col-md-6 m-auto text-danger">
           <p id="phone"></p>
         </div>
-      </div> */}
+      </div>
 
       <div className="row">
         <TextInput
