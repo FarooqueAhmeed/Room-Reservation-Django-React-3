@@ -16,13 +16,13 @@ export default function BookingComponent({ room }) {
     checkout_date: "",
   });
 
-  const isValid = () => {
-    const phone = /^\+?(88)?01[0-9]{9}/;
-    if (!phone.test(data.phone_number)) {
-      document.getElementById("phoneID").style.display = "block";
-      document.getElementById("phone").innerHTML = "Invalid Phone Number";
-      return false;
-    }
+  // const isValid = () => {
+  //   const phone = /^\+?(88)?01[0-9]{9}/;
+  //   if (!phone.test(data.phone_number)) {
+  //     document.getElementById("phoneID").style.display = "block";
+  //     document.getElementById("phone").innerHTML = "Invalid Phone Number";
+  //     return false;
+  //   }
     document.getElementById("phoneID").style.display = "none";
     document.getElementById("phone").innerHTML = "";
     if (new Date(data.checkout_date) < new Date(data.checking_date)) {
@@ -118,7 +118,7 @@ export default function BookingComponent({ room }) {
           onChange={(event) =>
             setData({ ...data, phone_number: event.target.value })
           }
-          required={true}
+          required={Flase}
         />
       </div>
 
@@ -177,4 +177,4 @@ export default function BookingComponent({ room }) {
       </div>
     </form>
   );
-}
+
