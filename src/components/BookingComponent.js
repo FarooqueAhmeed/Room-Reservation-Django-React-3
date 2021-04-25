@@ -104,7 +104,7 @@ export default function BookingComponent({ room }) {
           required={true}
         />
       </div>
-
+{/* 
       <div className="row">
         <TextInput
           divClass="form-group col-md-6 m-auto"
@@ -120,7 +120,7 @@ export default function BookingComponent({ room }) {
           }
           required={Flase}
         />
-      </div>
+      </div> */}
 
       <div className="row" id="phoneID" style={{ display: "none" }}>
         <div className="form-group col-md-6 m-auto text-danger">
