@@ -247,3 +247,6 @@ CLOUDINARY_STORAGE = {
 
 
 django_heroku.settings(locals())
+
+
+#web: gunicorn hotel_reservation_site.wsgi --log-file -
