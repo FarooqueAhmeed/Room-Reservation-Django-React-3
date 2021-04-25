@@ -10,7 +10,7 @@ export default function TextInput({
   inputValue,
   inputPlaceHolder,
   onChange,
-  
+  required
 }) {
   return (
     <div className={divClass}>
@@ -22,7 +22,7 @@ export default function TextInput({
         value={inputValue}
         placeholder={inputPlaceHolder}
         onChange={onChange}
-        
+        required={required}
       />
     </div>
   );
