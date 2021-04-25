@@ -222,7 +222,7 @@ os.path.join(BASE_DIR, 'build/static')
 # STATICFILES_DIRS = [
 #     BASE_DIR / 'static',
 #     BASE_DIR / 'build/static'
-]
+#]
 
 ########################################################
 
