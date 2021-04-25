@@ -6,9 +6,11 @@ from django.urls import path, include
 from django.views.generic import TemplateView
 
 urlpatterns = [
-    #######  for react to run on port 800 ############
-    path('', TemplateView.as_view(template_name='index.html')),
+   
     path('admin/', admin.site.urls),
+     #######  for react to run on port 800 ############
+    path('', TemplateView.as_view(template_name='index.html')),
+    
     
     path('hotel/', include("hotel_app.urls")),
     path('api/', include("rest_framework.urls")),
